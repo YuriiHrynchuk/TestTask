@@ -1,7 +1,6 @@
 package domaincounter
 
 import (
-	"TeamworkTestTask/pkg/domainextract"
 	"fmt"
 	"os"
 )
@@ -25,7 +24,7 @@ func (c *CSVCounter) CountDomains(records [][]string) (map[string]int, error) {
 
 	for _, record := range records {
 		email := record[2]
-		domain := domainextract.ExtractDomain(email)
+		domain := ExtractDomain(email)
 		domainCount[domain]++
 	}
 

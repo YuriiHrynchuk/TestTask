@@ -1,4 +1,4 @@
-package domainextract
+package domaincounter
 
 import "strings"
 
